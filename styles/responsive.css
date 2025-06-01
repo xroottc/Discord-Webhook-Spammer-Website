@@ -1,0 +1,140 @@
+/* just for the sizes */
+
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .input-row {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .button-group {
+    flex-direction: row;
+  }
+  
+  .result-stats {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .app-container {
+    padding: var(--spacing-xl);
+  }
+  
+  header {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--spacing-lg);
+  }
+  
+  .logo {
+    margin-bottom: 0;
+  }
+  
+  h1 {
+    margin-bottom: 0;
+  }
+  
+  .webhook-form, .results-section {
+    height: 100%;
+  }
+  
+  .results-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .results-container {
+    flex: 1;
+    max-height: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .app-container {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+  
+  .card {
+    padding: var(--spacing-lg);
+  }
+  
+  .input-row {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .result-stats {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+  }
+  
+  .stat {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: var(--text-xl);
+  }
+  
+  h2 {
+    font-size: var(--text-lg);
+  }
+  
+  .logo-text {
+    font-size: var(--text-2xl);
+  }
+  
+  .notification-container {
+    left: 20px;
+    right: 20px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .card {
+    padding: var(--spacing-md);
+  }
+  
+  .input-group {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  h1, h2 {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .result-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+  
+  .stat {
+    flex-direction: row;
+    gap: var(--spacing-sm);
+    align-items: center;
+  }
+  
+  .stat-label {
+    margin-bottom: 0;
+    min-width: 100px;
+  }
+}
